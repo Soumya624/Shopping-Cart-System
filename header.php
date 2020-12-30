@@ -12,6 +12,7 @@ session_start();
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid">
     <a class="navbar-brand" href="index.php">E-Commerce</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -22,7 +23,7 @@ session_start();
           <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
       </ul>
-      <div>
+     
       <?php
         $count=0;
         if(isset($_SESSION['cart']))
